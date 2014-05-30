@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+	<title>02_01</title>
+	
+	<link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="static/css/ui.css" type="text/css" media="screen" charset="utf-8">
+	
+	<script src="static/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="static/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="static/js/icheck.js"></script>
+		
+	<script src="static/js/ui.js"></script>
+    <script language="javascript" src="static/js/m/jquery.validate.js" charset="gb2312"></script>
+    
+    <script language="javascript" src="static/js/m/validate.js" charset="gb2312"></script> 
+
+</head>
+
+<body id="default">
+	<header id="header">
+		<div id="logo"><img src="static/images/logo.png"/></div>
+		<div class="module-title">新保投保</div>
+		<a href="#" class="home">
+			<span class="glyphicon glyphicon-chevron-left back-circle-border">
+				<!-- <img src="static/images/icon_new.png"/> -->
+			</span>
+		</a>
+	</header>
+	
+	<div id="title-block">
+		<div id="navgation-bar">
+			
+			<ul class="finished-1 finished">
+				<li class="finished"><span></span></li>
+				<li class="finished"><span></span></li>
+				<li class="current"><span></span></li>
+				<li class=""><span></span></li>
+				<li class="shadowstart">
+					<div class="des">
+						<p class="glyphicon glyphicon-tag"></p>
+					</div>
+					<span></span>
+				</li>
+				<li class=""><span></span></li>
+				<li class=""><span></span></li>
+				<li class="shadowstart">
+					<div class="des">
+						<p class="glyphicon glyphicon-usd"></p>
+					</div>
+					<span></span>
+				</li>
+				<li class="shadowstart">
+					<div class="des">
+						<p class="glyphicon glyphicon-ok"></p>
+					</div>
+					<span></span>
+				</li>
+			</ul>
+			
+		</div>
+		
+		<h2>车主信息</h2>
+	</div>
+	<div class="content">
+		<form role="form" id="form1" action="03_01.html" class="form_set_label_width_86">
+	            <div class="form-group basic-form-group">
+	                <div class="la"><label for="band1">车主姓名：</label></div>
+	                <div class="form-control form-control-l100"><input type="text" id="band1" name="band1" class=""></div>
+	            </div>
+	            <div class="form-group basic-form-group">
+	                <div class="la"><label for="band2">手机号码：</label></div>
+	                <div class="form-control form-control-l100"><input type="text" id="band2" name="band2" class=""></div>
+	            </div>	     
+	            <div class="form-group basic-form-group">
+	                <label for="band-3" class="label_range">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</label>
+	                
+	                <div id="div-gender" class="div_gender_for0201">
+							<input id="man" type="radio" name="iCheck" checked>
+							<label for="man" style="padding-left:5px;">男</label>
+							<input id="lady" type="radio" name="iCheck">
+							<label for="lady" style="padding-left:5px;">女</label>
+							<script>
+								$(document).ready(function() {
+									$('#div-gender input').iCheck({
+										checkboxClass : 'icheckbox_square-blue',
+										radioClass : 'iradio_square-blue',
+										increaseArea : '20%' // optional
+									});
+								});
+							</script>
+                	</div>
+	            </div>       
+	            <div class="form-group basic-form-group">
+	                <label name="age-range" for="age-range" class="label_range">年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄：</label>
+                		<div class="form-control-l100 div-select-contain">
+	                		<select class="form-control">
+			                    <option value="1">10 - 20</option>
+			                    <option value="2">21 - 30</option>
+			                    <option value="3">31 - 40</option>
+			                    <option value="4">...</option>
+			                </select>
+		                </div>
+	            </div>
+        </form>
+		<div class="btn-group-wrapper">
+			<div style="height: 34px"></div>
+			<div class="btn-group" style="width: 100%;">
+				<div class="col-xs-3">
+					<a href="01_03.html" class="btn btn-primary btn-lg btn-back style-first-button-style">
+						<span class="glyphicon glyphicon-chevron-left back-circle-border"></span>
+					</a>
+				</div>
+				<div class="col-xs-9">
+					<a onclick="submitForm()" class="btn btn-danger btn-lg style-second-button-width">下一步,车型配置选择</a>
+				</div>
+			</div>
+			<div style="height: 100px"></div>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<div class="btn-group-wrapper">
+		</div>
+		
+		<div id="footer-container">
+			<p>版权所有 @ 安盛天平汽车保险股份有限公司</p>
+			<p>未经许可不得复制、转载或者摘编，违者必究！</p>
+			<p>copyright @ 2004-2011</p>
+		</div>
+	</div>
+<script type="text/javascript" charset="gb2312">
+
+        var validator = $('#form1').validate({
+           rules:{
+               personnelName: {
+                    required: true,
+                    chName: true
+               },
+               band1: {
+                    required: true
+               },
+
+               band2: {
+                   required: true
+               },
+               
+           },
+        });
+		   
+        $('#submit').bind('tap', function(){
+            validator.resetForm();
+            if (validator.form()){
+                setTimeout(function(){
+                    $('#tips').bind('tap', function(){
+                        $('#tips').addClass('uhide');
+                    });
+                },500);   
+            }else{
+                
+            }
+            
+        });
+
+
+         
+        if($('#gender input').val()=='F'){
+            $('#gender input').attr('checked', 'checked');    
+        }
+        $('#gender').toggle(function(){
+            $(this).find('input').attr('checked',true).val('F');
+        }, function(){
+            $(this).find('input').attr('checked',false).val('M');
+        });
+        
+
+
+</script>
+	
+</body>

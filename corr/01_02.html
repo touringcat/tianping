@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+	<title>01_02</title>
+	
+	<link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="static/css/ui.css" type="text/css" media="screen" charset="utf-8">
+	
+	<script src="static/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="static/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="static/js/icheck.js"></script>
+	
+	<script src="static/js/ui.js"></script>
+    <script language="javascript" src="static/js/m/jquery.validate.js" charset="gb2312"></script>
+    
+    <script language="javascript" src="static/js/m/validate.js" charset="gb2312"></script>
+	
+	<script src="static/js/jquery.loadmask.min.js"></script>
+	
+	<script>
+	$(document).ready(function(){
+		$("body").mask("");
+		$("a").bind("click", function(){
+			$("body").mask("");
+			//preventDefault();
+			//$(".loadmask").append(jQuery('<img ontouchstart="return touchDummy(event)" src="static/images/car.jpg">'));
+		});
+	});
+	</script>
+	
+</head>
+
+<body id="default">
+	<header id="header">
+		<div id="logo"><img src="static/images/logo.png"/></div>
+		<div class="module-title">新保投保</div>
+		<a href="#" class="home">
+			<span class="glyphicon glyphicon-chevron-left back-circle-border">
+				<!-- <img src="static/images/icon_new.png"/> -->
+			</span>
+		</a>
+	</header>
+	
+	<div id="title-block">
+		<div id="navgation-bar">
+			
+			<ul class="finished-0 finished">
+				<li class=""><span></span></li>
+				<li class="current"><span></span></li>
+				<li class=""><span></span></li>
+				<li class=""><span></span></li>
+				<li class="shadowstart">
+					<div class="des">
+						<p class="glyphicon glyphicon-tag"></p>
+					</div>
+					<span></span>
+				</li>
+				<li class=""><span></span></li>
+				<li class=""><span></span></li>
+				<li class="shadowstart">
+					<div class="des">
+						<p class="glyphicon glyphicon-usd"></p>
+					</div>
+					<span></span>
+				</li>
+				<li class="shadowstart">
+					<div class="des">
+						<p class="glyphicon glyphicon-ok"></p>
+					</div>
+					<span></span>
+				</li>
+			</ul>
+			
+		</div>
+
+		
+		<h2>基本信息</h2>
+	</div>
+	<div class="content">
+		<form  class="form-align-120" role="form" id="form1" action="#">
+			<div class="base-info-form-group form-group base-info-form-group-pitch basic-form-group base-info-form-group-height-free">
+                <div class="la"><label for="band" style="width: 120px;">被保车辆车牌号：</label></div>
+                <div class="form-control form-control-mid form-control-l135">
+                	<input type="text" id="band" name="band" class="">
+                </div>
+            </div>
+            <div class="base-info-form-group form-group base-info-form-group-pitch basic-form-group base-info-form-group-height-free">
+              <div id="new-car-flag" class="form-control-rft" style="white-space: nowrap; padding-left: 120px;">
+	        		<input id="band-0" type="checkbox" class="">
+	        		<label for="band-0">新车未上牌</label>
+	        		<script>
+						$(document).ready(function(){
+						  $('#new-car-flag input').iCheck({
+						    checkboxClass: 'icheckbox_square-blue',
+						    radioClass: 'iradio_square-blue',
+						    increaseArea: '20%' // optional
+						  });
+						});
+					</script>
+				</div>
+            </div>
+            <div class="base-info-form-group form-group basic-form-group">
+	                <div class="la"><label for="">是否过户车：</label></div>
+	                
+	                <div id="div-gender" class="">
+							<input id="r_yes" type="radio" name="iCheck" checked>
+							<label for="r_yes" style="padding-left:5px;">是</label>
+							<input id="n_no" type="radio" name="iCheck">
+							<label for="n_no" style="padding-left:5px;">否</label>
+							<script>
+								$(document).ready(function() {
+									$('#div-gender input').iCheck({
+										checkboxClass : 'icheckbox_square-blue',
+										radioClass : 'iradio_square-blue',
+										increaseArea : '20%' // optional
+									});
+								});
+							</script>
+                	</div>
+	        </div>
+            <div class="base-info-form-group form-group basic-form-group base-info-form-group-height-free">
+                <div class="la"><label for="band11">过户日期：</label></div>
+                <div class="form-control form-control-l135">
+                	<input type="text" id="band11" name="band11" class="date" value="2014-3-7">
+                </div>
+            </div>
+            <div class="base-info-form-group form-group basic-form-group">
+	                <div class="la"><label for="">是否定期保养：</label></div>
+	                
+	                <div id="div-gender" class="">
+							<input id="r_yes_mt" type="radio" name="iCheck_mt" checked>
+							<label for="r_yes_mt" style="padding-left:5px;">是</label>
+							<input id="n_no_mt" type="radio" name="iCheck_mt">
+							<label for="n_no_mt" style="padding-left:5px;">否</label>
+							<script>
+								$(document).ready(function() {
+									$('#div-gender input').iCheck({
+										checkboxClass : 'icheckbox_square-blue',
+										radioClass : 'iradio_square-blue',
+										increaseArea : '20%' // optional
+									});
+								});
+							</script>
+                	</div>
+	        </div>
+            <div class="base-info-form-group form-group basic-form-group base-info-form-group-height-free">
+                <div class="la"><label for="band2">商业险起保日期：</label></div>
+                <div class="form-control form-control-l135">
+                	<input type="text" id="band2" name="band2" class="date">
+                </div>
+            </div>
+            <div class="base-info-form-group form-group basic-form-group base-info-form-group-height-free">
+                <div class="la"><label for="band3">交强险起保日期：</label></div>
+                <div class="form-control form-control-l135"><input value="2014,3,3" type="text" id="band3" name="band3" class="date"></div>
+            </div>
+            <script type="text/javascript">
+            	$('.date').each(function(){
+            		var _this_obj = $(this);
+					hookSmoothDate($(this),new Date(2014,0,4),new Date(2014,4,20),"yyyy-MM-dd",function (){
+		            	//disabled all weekend
+		            	//disabledWeekend(_getDates(new Date(2014,0,4), new Date(2014,4,20)));
+		            	
+		            	//setActiveDay('2014-0-6');
+		            	//setDisabledDay('2014-0-8');
+		            	
+		            	//set active in first abled day
+		            	//setActiveDay($(".smooth-date-week-content div[class='']:first").attr("id"));
+		            	
+		            	// if($(_this_obj).val()!=""){
+		            		// var _default_date = new Date($(this).val());
+		            		// if(_default_date){
+		            			// alert(_default_date);
+		            		// }
+		            	// }
+		            	
+		            });
+				});
+				// $("#band2").change(function(){
+					// alert($(this).val());
+				// });
+			</script>
+        </form>
+        <div class="seperator"></div>
+		<div class="btn-group-wrapper">
+			<div class="col-xs-12">
+				<a onclick="submitForm()" class="btn btn-danger btn-lg col-xs-12">下一步,车主信息</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="seperator"></div>
+	<div id="footer">
+		
+		<div id="footer-container">
+			<p>版权所有 @ 安盛天平汽车保险股份有限公司</p>
+			<p>未经许可不得复制、转载或者摘编，违者必究！</p>
+			<p>copyright @ 2004-2011</p>
+		</div>
+	</div>
+<script type="text/javascript" charset="gb2312">
+
+        var validator = $('#form1').validate({
+           rules:{
+               personnelName: {
+                    required: true,
+                    chName: true
+               },
+               band: {
+                    required: true
+               },
+
+               band11: {
+                    required: true
+               },
+
+               band2: {
+                   required: true
+               },
+               band3: {
+                   required: true
+               }
+               
+           },
+        });
+		   
+        $('#submit').bind('tap', function(){
+            validator.resetForm();
+            if (validator.form()){
+                setTimeout(function(){
+                    $('#tips').bind('tap', function(){
+                        $('#tips').addClass('uhide');
+                    });
+                },500);
+            }else{
+                
+            }
+            
+        });
+
+
+         
+        if($('#gender input').val()=='F'){
+            $('#gender input').attr('checked', 'checked');
+        }
+        $('#gender').toggle(function(){
+            $(this).find('input').attr('checked',true).val('F');
+        }, function(){
+            $(this).find('input').attr('checked',false).val('M');
+        });
+        
+		
+
+</script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+	<title>03_04</title>
+	
+	<link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="static/css/ui.css" type="text/css" media="screen" charset="utf-8">
+	
+	<script src="static/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="static/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="static/js/icheck.js"></script>
+	
+	<script src="static/js/ui.js"></script>
+</head>
+
+<body id="default">
+	<!--button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+	  Launch demo modal
+	</button-->
+	
+	<script>
+		$(document).ready(function(){
+			$("#myModal").modal();
+		});
+	</script>
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div style="width:100%; height: 100%; z-index: 0; background-color: gray; opacity: 0.5"></div>
+	  <div class="modal-dialog modal-dialog-center" style="z-index: 1; margin-left: -151px;">
+	    <div class="modal-content" style="width: 290px;">
+	      <!-- <div class="modal-header "> -->
+	        <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
+	        <!-- <h6 class="modal-title"  id="myModalLabel" >为了保证你的信息安全，关键信息隐去中间几位</h6>
+	      </div> -->
+	      <div class="modal-body">
+	      	<div style="padding:0 10px 0 10px;width: 100%;">
+	      		<p style="margin-top: 10px">为了保证您的信息安全, 关键信息隐去中间几位</p>
+	            	<table class="table table-bordered word-inside modal-table" style="">
+	            		<tr>
+	            			<td style="width: 83px">品牌型号</td>
+	            			<td >GH648668</td>
+	            		</tr>
+	            		<tr>
+	            			<td>车架号</td>
+	            			<td >HKJ6739HUN</td>
+	            		</tr>
+	            		<tr>
+	            			<td>发动机号</td>
+	            			<td >1234567xxxxxxx1234567</td>
+	            		</tr>
+	            		<tr>
+	            			<td>注册日期</td>
+	            			<td >2012-XX-02</td>
+	            		</tr>
+	            		<tr>
+	            			<td>发证日期</td>
+	            			<td >2012-XX-02</td>
+	            		</tr>
+	            	</table>
+            	</div>
+            	<div class="text-center modal-box-button-group">
+		      		<a href="03_03.html" class="btn btn-primary btn-lg">修改</a>
+					<a onclick="submitForm()" class="btn btn-danger btn-lg">确认</a>            		
+            	</div>
+	        	<div class="">
+	        		<p style="padding-left: 10px;font-weight: 500;padding-top: 8px;" class="gray-tip">
+	        			* 点击修改后,请重新输入您的车辆信息
+	        		</p>
+	        	</div>
+	        	<ul>
+	        		<li>li...1</li>
+	        		<li>li...2</li>
+	        	</ul>
+	      </div>
+	      <!-- <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div> -->
+	    </div>
+	  </div>
+	</div>
+
+	<header id="header">
+		<div id="logo"><img src="static/images/logo.png"/></div>
+		<div class="module-title">新保投保</div>
+		<a href="#" class="home">
+			<span class="glyphicon glyphicon-chevron-left back-circle-border">
+				<!-- <img src="static/images/icon_new.png"/> -->
+			</span>
+		</a>
+	</header>
+	
+	<div id="title-block">
+		<div id="navgation-bar">
+			
+			<ul class="finished-2 finished">
+				<li class="finished"><span></span></li>
+				<li class="finished"><span></span></li>
+				<li class="finished"><span></span></li>
+				<li class="current"><span></span></li>
+				<li class="shadowstart">
+					<div class="des">
+						<p class="glyphicon glyphicon-tag"></p>
+					</div>
+					<span></span>
+				</li>
+				<li class=""><span></span></li>
+				<li class=""><span></span></li>
+				<li class="shadowstart">
+					<div class="des">
+						<p class="glyphicon glyphicon-usd"></p>
+					</div>
+					<span></span>
+				</li>
+				<li class="shadowstart">
+					<div class="des">
+						<p class="glyphicon glyphicon-ok"></p>
+					</div>
+					<span></span>
+				</li>
+			</ul>
+			
+		</div>
+		
+		<h2>配置选择</h2>
+	</div>
+	<div class="seperator"></div>
+	
+	<div class="content">
+		<form role="form" action="04.html">
+            <div class="form-group">
+            	<div class="" style="width:100%;">
+	            	<div class="semi-table-row" style="">
+	            		<div class="semi-table-col-1"></div>
+	            		<div class="semi-table-col-2"><label>车型名称：</label></div>
+	            		<div class="semi-table-col-3"><p>XXXXXXX</p></div>
+	            	</div>
+	            	<div class="semi-table-row">
+	            		<div class="semi-table-col-1 text-center">
+							<input checked id="" type="radio" name="iCheck">
+							<!-- <label for="lady">女</label> -->
+	            		</div>
+	            		<div class="semi-table-col-2"><label>车款：</label></div>
+	            		<div class="semi-table-col-3">
+	            			<p>xxx</p>
+	            		</div>
+	            	</div>
+	            	<div class="semi-table-row" style="">
+	            		<div class="semi-table-col-1"></div>
+	            		<div class="semi-table-col-2"><label>车架（含税）：</label></div>
+	            		<div class="semi-table-col-3"><p>11a1</p></div>
+	            	</div>
+            	</div>
+            </div>
+            <div class="form-group">
+            	<div class="" style="width:100%;">
+	            	<div class="semi-table-row" style="">
+	            		<div class="semi-table-col-1"></div>
+	            		<div class="semi-table-col-2"><label>车型名称：</label></div>
+	            		<div class="semi-table-col-3"><p>XXXXXXX</p></div>
+	            	</div>
+	            	<div class="semi-table-row">
+	            		<div class="semi-table-col-1 text-center">
+							<input id="" type="radio" name="iCheck">
+							<!-- <label for="lady">女</label> -->
+	            		</div>
+	            		<div class="semi-table-col-2"><label>车款：</label></div>
+	            		<div class="semi-table-col-3">
+	            			<p>xxx</p>
+	            		</div>
+	            	</div>
+	            	<div class="semi-table-row" style="">
+	            		<div class="semi-table-col-1"></div>
+	            		<div class="semi-table-col-2"><label>车架（含税）：</label></div>
+	            		<div class="semi-table-col-3"><p>11a1</p></div>
+	            	</div>
+            	</div>
+            </div>
+            <div class="form-group">
+            	<div class="" style="width:100%;">
+	            	<div class="semi-table-row" style="">
+	            		<div class="semi-table-col-1"></div>
+	            		<div class="semi-table-col-2"><label>车型名称：</label></div>
+	            		<div class="semi-table-col-3"><p>XXXXXXX</p></div>
+	            	</div>
+	            	<div class="semi-table-row">
+	            		<div class="semi-table-col-1 text-center">
+							<input id="" type="radio" name="iCheck">
+							<!-- <label for="lady">女</label> -->
+							<script>
+								$(document).ready(function() {
+									$('.form-group input').iCheck({
+										checkboxClass : 'icheckbox_square-blue',
+										radioClass : 'iradio_square-blue',
+										increaseArea : '20%' // optional
+									});
+								});
+							</script>
+	            		</div>
+	            		<div class="semi-table-col-2"><label>车款：</label></div>
+	            		<div class="semi-table-col-3">
+	            			<p>xxx</p>
+	            		</div>
+	            	</div>
+	            	<div class="semi-table-row" style="">
+	            		<div class="semi-table-col-1"></div>
+	            		<div class="semi-table-col-2"><label>车架（含税）：</label></div>
+	            		<div class="semi-table-col-3"><p>11a1</p></div>
+	            	</div>
+            	</div>
+            </div>
+        </form>
+		<div id="buttons" class="div-btn-grouop">
+			<div class="col-xs-12">
+				<a class="btn btn-primary btn-lg col-xs-12"><span class="span-tel-no">如果不是您的车型,请点击这里</span></a>
+			</div>
+		</div>
+		<div class="seperator"></div>
+		<div>
+                <div class="col-xs-12">
+                	<div id="div-static-text">
+						<div class="col-xs-12">
+							<p class="text-center">
+								我们使用这些变量和一些简单的公式计算所有页面元素的<a href="#">元素元素元素元素</a>
+							</p>
+								<div id="ok-flag" class="form-control-rft" style="white-space: nowrap;">
+				        		<p class="text-center">
+				        			<input id="band-0" type="checkbox" class="">
+				        			<label for="band-0" style="font-weight:300">车辆信息准确</label>
+				        		</p>
+								</div>
+						</div>
+					</div>
+                </div>
+            </div>
+		<div class="btn-group-wrapper">
+			<div class="btn-group">
+				<a class="btn btn-primary btn-lg btn-back" style="height:41px">
+					<span class="glyphicon glyphicon-chevron-left back-circle-border"></span>
+				</a>
+				<a class="btn btn-danger btn-lg">下一步,查看车险报价</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="seperator"></div>
+	<div id="footer">
+		<div class="btn-group-wrapper">
+		</div>
+		
+		<div id="footer-container">
+			<p>版权所有 @ 安盛天平汽车保险股份有限公司</p>
+			<p>未经许可不得复制、转载或者摘编，违者必究！</p>
+			<p>copyright @ 2004-2011</p>
+		</div>
+	</div>
+	
+</body>
+</html>

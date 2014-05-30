@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+	<title>default</title>
+	
+	<link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="static/css/ui.css" type="text/css" media="screen" charset="utf-8">
+    
+	<script src="static/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="static/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="static/js/slidernav-min.js" type="text/javascript" charset="utf-8"></script>
+    
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+            $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                if($(e.target).attr('href')=='#more-city'){
+                    $('.tab-content').sliderNav({
+                        height: $('.tab-content').height(),
+                    });
+                }else{
+                    $('.slider-nav').remove();
+                }
+            });
+
+	    //给链接添加id以方便26个字母定位
+	    $('#more-city a.title').each(function(e){
+		var $thislink = $(this),
+		            n = $thislink.attr('name');
+		$thislink.attr('id',n);
+	    });
+	  
+	   });
+    </script>
+</head>
+
+<body id="default">
+	
+	<header id="header">
+		<div id="logo"><img src="static/images/logo.png"/></div>
+		<div class="module-title">新保投保</div>
+		<a class="home"><span class="glyphicon glyphicon-home"></span></a>
+	</header>
+	
+	<div id="action-bar">
+        <a href="#" class="btn btn-link btn-left">取消</a>
+        <h2>城市选择</h2>
+        <a href="#" class="btn btn-link btn-right">确定</a>
+    </div>
+    
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#hot-city" data-toggle="tab">热门城市</a></li>
+        <li><a href="#more-city" data-toggle="tab">更多城市</a></li>
+    </ul>
+    
+    <div class="tab-content">
+        <div class="tab-pane active" id="hot-city">
+            <ul class="selector">
+                <li class="active"><a href="#">上海市</a></li>
+                <li><a href="#">北京市</a></li>
+                <li><a href="#">杭州市</a></li>
+                <li><a href="#">宁波市区</a></li>
+                <li><a href="#">广州市</a></li>
+                <li><a href="#">温州市</a></li>
+                <li><a href="#">重庆市</a></li>
+                <li><a href="#">武汉市</a></li>
+                <li><a href="#">石家庄市</a></li>
+                <li><a href="#">南京市</a></li>
+            </ul>
+            
+        </div>
+        
+        <div class="tab-pane slider-content" id="more-city">
+            <ul class="selector al">
+                <li id="a"><a name="a" class="title">A</a>
+                    <ul>
+                        <li><a href="#">安阳市</a></li>
+                    </ul>
+                </li>
+                <li id="b"><a name="b" class="title">B</a>
+                    <ul>
+                        <li><a href="#">保定市</a></li>
+                        <li><a href="#">北京市</a></li>
+                        <li><a href="#">北仑区</a></li>
+                        <li><a href="#">滨州地区</a></li>
+                    </ul>
+                </li>
+                <li id="c"><a name="c" class="title">C</a>
+                    <ul>
+                        <li><a href="#">成都市</a></li>
+                        <li><a href="#">重庆市</a></li>
+                        <li><a href="#">慈溪市</a></li>
+                    </ul>
+                </li>
+                <li id="d"><a name="d" class="title">D</a>
+                    <ul>
+                        <li><a href="#">成都市</a></li>
+                        <li><a href="#">重庆市</a></li>
+                        <li><a href="#">慈溪市</a></li>
+                    </ul>
+                </li>
+                <li id="e"><a name="e" class="title">E</a>
+                    <ul>
+                        <li><a href="#">成都市</a></li>
+                        <li><a href="#">重庆市</a></li>
+                        <li><a href="#">慈溪市</a></li>
+                    </ul>
+                </li>
+                <li id="f"><a name="f" class="title">F</a>
+                    <ul>
+                        <li><a href="#">成都市</a></li>
+                        <li><a href="#">重庆市</a></li>
+                        <li><a href="#">慈溪市</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+        
+        
+    
+	
+	<div id="footer">
+		<div class="btn-group-wrapper">
+			<div class="btn-group">
+				<a class="btn btn-primary btn-xs">网页版</a>
+				<a class="btn btn-default btn-xs">触屏版</a>
+			</div>
+		</div>
+		
+		<div id="footer-container">
+			<p>版权所有 @ 安盛天平汽车保险股份有限公司</p>
+			<p>未经许可不得复制、转载或者摘编，违者必究！</p>
+			<p>copyright @ 2004-2011</p>
+		</div>
+	</div>
+	
+</body>
+</html>

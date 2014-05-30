@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+	<title>支付订单-信用卡</title>
+	
+
+	<link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="static/css/ui.css" type="text/css" media="screen" charset="utf-8">
+	
+	<script src="static/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="static/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="static/js/icheck.js"></script>
+		
+	<script src="static/js/ui.js"></script>
+    <script language="javascript" src="static/js/m/jquery.validate.js" charset="gb2312"></script>
+    
+    <script language="javascript" src="static/js/m/validate.js" charset="gb2312"></script>
+
+</head>
+
+<body id="default">
+	<header id="header">
+		<div id="logo"><img src="static/images/logo.png"/></div>
+		<div class="module-title">支付订单-信用卡</div>
+		<a href="#" class="home">
+			<span class="glyphicon glyphicon-chevron-left back-circle-border">
+				<!-- <img src="static/images/icon_new.png"/> -->
+			</span>
+		</a>
+	</header>
+	
+	<div id="title-block">
+		<!-- <div id="navgation-bar">
+			
+			<ul class="finished-6 finished">
+				<li class="finished"><span></span></li>
+				<li class="finished"><span></span></li>
+				<li class="finished"><span></span></li>
+				<li class="finished"><span></span></li>				
+				<li class="finished shadowfinish">
+					<div class="des">
+						<p class="glyphicon glyphicon-tag"></p>
+					</div>
+					<span></span>
+				</li>
+				<li class="finished"><span></span></li>
+				<li class="finished"><span></span></li>
+				<li class="current shadowfinish">
+					<div class="des">
+						<p class="glyphicon glyphicon-usd"></p>
+					</div>
+					<span></span>
+				</li>
+				<li class="shadowstart">
+					<div class="des">
+						<p class="glyphicon glyphicon-ok"></p>
+					</div>
+					<span></span>
+				</li>
+			</ul>
+			
+		</div> -->
+		
+		<h2>
+			支付订单
+		</h2>
+		
+	</div>
+	
+	<div class="seperator"></div>
+	
+	<div class="content">
+		<form role="form" id="form1" action="03_03.html">
+
+			<div class="choise-info-form-group form-group form-group-2line">
+                <div style="display: -webkit-box;padding-left:15px;padding-right:15px" class="la">
+                	<p style="width: 100%; padding-right: 82px;margin-top: 8px;">
+                		银行信息：建设银行 信用卡
+                	</p>
+                </div>
+                <div style="padding-left: 15px;padding-top: 0px" class="form-group-2line">
+                	<p>付款金额：<span style="color:red">￥6159.92</span>元</p>
+                </div>
+                <div style="padding-left: 15px;padding-top: 0px" class="form-group-2line">
+                	<p>请填写付款信用卡账号信息</p>
+                </div>
+            </div>
+            <div class="choise-info-form-group form-group form-group-credit">
+                <div class="la"><label for="band">银行卡号：</label></div>
+                <div class="form-control"><input type="text" id="band" name="band" class=""></div>
+            </div>
+            <div class="choise-info-form-group form-group form-group-credit">
+                <div class="la"><label for="band1">姓名：</label></div>
+                <div class="form-control"><input type="text" id="band1" name="band1" class=""></div>
+            </div>
+            <div class="choise-info-form-group form-group form-group-credit">
+                <div class="la"><label for="band2">身份证：</label></div>
+                <div class="form-control"><input type="text" id="band2" name="band2" class=""></div>
+            </div>
+            <div class="choise-info-form-group form-group form-group-credit">
+                <div class="la"><label for="band3">卡正面有效期：</label></div>
+                <div class="form-control"><input type="text" id="band3" name="band3" class=""></div>
+            </div>
+            <div class="choise-info-form-group form-group form-group-credit">
+                <div class="la"><label for="band4">银行预留手机号：</label></div>
+                <div class="form-control"><input type="text" id="band4" name="band4" class=""></div>
+            </div>
+
+            <div class="choise-info-form-group form-group form-group-credit">
+            	<div style="padding-left:15px;" class="">
+            		<a><p>查看快捷支付服务协议</p></a>
+            	</div>
+            </div>
+
+
+			<div class="base-info-form-group form-group base-info-form-group-pitch basic-form-group" style="height:auto;">
+                <div class="la"><label for="band5">付款效验码：</label></div>
+                <div class="form-control form-control-mid form-control-l135-r135">
+                	<input type="text" id="band5" name="band5">
+                </div>
+        		<div id="new-car-flag" class="form-control-rft" style="white-space: nowrap;">
+                	<div class="recall div-btn-grouop text-center">
+                    	<a style="width:auto;" class="btn btn-danger btn-lg">重新获取</a>                  	
+                    </div>
+                    <!--<div class="timeing"><span style="color:red; padding-left:4px;">00</span>秒后重新获取</div>-->
+				</div>
+            </div>
+            <div class="choise-info-form-group form-group form-group-credit">
+            	<div id="buttons" style="width:100%;padding-left: 15px;padding-right:15px" class="div-btn-grouop text-center">
+					<div class="" style="width:100%">
+						<a onclick="submitForm()" style="width:100%" class="btn btn-danger btn-lg">获取验证码</a>
+					</div>
+				</div>
+            </div>
+			
+        </form>
+        <div class="seperator"></div>
+		<!-- <div class="btn-group-wrapper">
+			<div class="btn-group">
+				<a href="03_02.html" class="btn btn-primary btn-lg btn-back" style="height:41px">
+					<span class="glyphicon glyphicon-chevron-left back-circle-border"></span>
+				</a>
+				<a onclick="submitForm()" class="btn btn-danger btn-lg">下一步,查看车险报价</a>
+			</div>
+			<div style="height: 34px"></div>
+		</div> -->
+	</div>
+	
+	<div class="seperator"></div>
+	<div id="footer">
+		<div class="btn-group-wrapper">
+		</div>
+		
+		<div id="footer-container">
+			<p>版权所有 @ 安盛天平汽车保险股份有限公司</p>
+			<p>未经许可不得复制、转载或者摘编，违者必究！</p>
+			<p>copyright @ 2004-2011</p>
+		</div>
+	</div>
+	
+<script type="text/javascript" charset="gb2312">
+
+        var validator = $('#form1').validate({
+           rules:{
+               personnelName: {
+                    required: true,
+                    chName: true
+               },
+               band: {
+                    required: true
+               },
+
+               band1: {
+                   required: true
+               },
+               band2: {
+                   required: true
+               },
+               band5: {
+                   required: true
+               },
+			   
+               band4: {
+                   required: true
+               },
+
+               band3: {
+                   required: true
+               }
+               
+           },
+        });
+		   
+        $('#submit').bind('tap', function(){
+            validator.resetForm();
+            if (validator.form()){
+                setTimeout(function(){
+                    $('#tips').bind('tap', function(){
+                        $('#tips').addClass('uhide');
+                    });
+                },500);   
+            }else{
+                
+            }
+            
+        });
+
+
+         
+        if($('#gender input').val()=='F'){
+            $('#gender input').attr('checked', 'checked');    
+        }
+        $('#gender').toggle(function(){
+            $(this).find('input').attr('checked',true).val('F');
+        }, function(){
+            $(this).find('input').attr('checked',false).val('M');
+        });
+        
+
+
+</script>    
+</body>
+</html>

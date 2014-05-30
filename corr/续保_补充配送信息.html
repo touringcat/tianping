@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+	<title>补充配送信息</title>
+	
+	<link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+	
+	<script src="static/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="static/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<link rel="stylesheet" href="static/css/ui.css" type="text/css" media="screen" charset="utf-8">
+	<script src="static/js/ui.js"></script>
+	<script src="static/js/icheck.js"></script>
+    <script language="javascript" src="static/js/m/jquery.validate.js" charset="gb2312"></script>
+    
+    <script language="javascript" src="static/js/m/validate.js" charset="gb2312"></script>
+
+</head>
+
+<body id="default">
+	<header id="header">
+		<div id="logo"><img src="static/images/logo.png"/></div>
+		<div class="module-title">续保</div>
+		<a href="#" class="home"><span class="glyphicon glyphicon-chevron-left back-circle-border"></span></a>
+	</header>
+	
+	<div id="title-block">
+
+		<h2>补充配送信息</h2>
+	</div>
+	<div class="content">
+		<form role="form" id="form1" action="06_01.html">
+				<div class="form-group form-group-head">
+	                <p>被保人信息</p>
+	            </div>
+	            <div class="form-group" style="display: none">
+	            </div>
+	            <div class="form-group ">
+	                <div class="la"><label for="band1" style="width: 100px;">收件人地址:</label></div>
+	                <div class="form-control form-control-l100"><input type="text" id="band1" name="band1"class=""></div>
+	            </div>
+	            <div class="form-group ">
+	                <div class="la"><label for="band2" style="width: 100px;">收件人手机:</label></div>
+	                <div class="form-control form-control-l100"><input type="text" id="band2" name="band2" class=""></div>
+	            </div>
+	            <div class="form-group addition-info-form-group">
+	                <div class="la"><label for="band"  style="width: 100px;">发票抬头：</label></div>
+	                <div class="form-control form-control-l135-r52"><input type="text" id="band" name="band" class="form-control-mid"></div>
+	        		<div id="bill-need" class="form-control-rft" style="white-space: nowrap; padding-top: 15px;">
+		        		<input id="band-0" type="checkbox" class="">
+		        		<label for="band-0">需要</label>
+		        		<script>
+							$(document).ready(function(){
+							  $('#bill-need input').iCheck({
+							    checkboxClass: 'icheckbox_square-blue',
+							    radioClass: 'iradio_square-blue',
+							    increaseArea: '20%' // optional
+							  });
+							});
+						</script>
+					</div>
+            	</div>
+				<div class="form-group ">
+	                <div class="la"><label for="band4" style="width: 100px;">收单时间:</label></div>
+                	<div class="form-control form-control-l100"><input type="text" id="band4" name="band4" class=""></div>
+	            <script>
+	            	$('#band4').each(function(){
+							hookSmoothDate($(this),new Date(2014,0,4),new Date(2014,4,20));
+						});
+	            </script>
+	            </div>
+				<div class="form-group select_margin_left">
+					<div style="padding-top: 7px;">
+	                	<label name="select1" for="band-10"  style="width: 100px;">收货地址：</label>
+	                	<label style="display: none" name="select2" for="band-10" style="width: 100px;">收货地址：</label>
+	                	<label style="display: none" name="select3" for="band-10" style="width: 100px;">收货地址：</label>
+	                </div>
+	                <div class="local-select-group form-control-l135">
+	                	<div class="div-poller-select-container-province">
+	                	<select id="select1" class="form-control">
+			                    <option value>请选择省市/其他</option>
+			                    <option value="2">安徽</option>
+			                    <option value="3">浙江</option>
+			                    <option value="4">...</option>
+			                    <option value="5">浙江</option>
+			                    <option value="6">...</option>
+			                    <option value="7">浙江</option>
+			                    <option value="8">.bbb</option>
+			            </select>
+			            </div>
+			            <div class="div-poller-select-container-province">
+			            <select id="select2" class="form-control">
+			                    <option value>请选择城市</option>
+			                    <option value="2">北京</option>
+			                    <option value="3">上海</option>
+			                    <option value="4">...</option>
+			                    <option value="5">上海</option>
+			                    <option value="6">...</option>
+			                    <option value="7">上海</option>
+			                    <option value="8">bbb</option>
+			            </select>
+			            </div>
+			            <div class="div-poller-select-container-province">
+			            <select id="select3" class="form-control">
+			                    <option value>请选择区/县</option>
+			                    <option value="2">浦东区</option>
+			                    <option value="3">闵行区</option>
+			                    <option value="4">...</option>
+			                    <option value="5">闵行区</option>
+			                    <option value="6">...</option>
+			                    <option value="7">闵行区</option>
+			                    <option value="8">...</option>
+			                    <option value="9">闵行区</option>
+			                    <option value="10">bbb</option>
+			            </select>
+			            </div>
+			            <div class="smooth-select-contain-div" id="testtt" style="display: block;padding-left: 6px">
+			            	<input type="text" style="padding-left: 0;" id="band-10" name="band10" class="form-control" placeholder="请输入街道地址">
+			            </div>
+			        </div>
+	            </div>
+				<div class="form-group" style="display: none"></div>
+	            <div class="form-group form-group-head">
+	                <p>特别约定</p>
+	            </div>
+	            <div class="form-group form-group-mail-l" style="padding-left: 15px; padding-right: 15px;">
+	                1、本人已阅读并确认保费《商业险浮动告知单》《交强险浮动告知单》全部内容。
+	            </div>	            
+	            <div class="form-group form-group-mail-l" style="padding-left: 15px; padding-right: 15px;">
+	                2、本人已阅本次投保特别约定。
+	            </div>
+	            <div class="form-group" style="display: none"></div>
+	            <div class="form-group form-group-head">
+	                <p>保险条款</p>
+	            </div>
+	            <div class="form-group form-group-mail-l" style="padding-left: 15px; padding-right: 15px;">
+	                3、本人已————
+	            </div>
+	            <div class="form-group form-group-mail-l" style="padding-left: 15px; padding-right: 15px;">
+	                <a>√ 阅读并同意以上条款</a>
+	            </div>
+
+		<div class="btn-group-wrapper">
+			<div style="height: 34px"></div>
+			<!-- <div class="btn-group text-center" style="width:100%">
+            	<input type=submit value="立即支付" class="btn btn-danger btn-lg" style="width:98%">
+			</div> -->
+			<div class="col-xs-12">
+				<!-- btn btn-danger btn-lg -->
+	            <input type=submit value="立即支付" class="btn btn-danger btn-lg col-xs-12">
+			</div>
+			<div style="height: 45px"></div>
+		</div>
+        </form>
+	</div>
+	
+	<div id="footer">
+		<div class="btn-group-wrapper">
+		</div>
+		
+		<div id="footer-container">
+			<p>版权所有 @ 安盛天平汽车保险股份有限公司</p>
+			<p>未经许可不得复制、转载或者摘编，违者必究！</p>
+			<p>copyright @ 2004-2011</p>
+		</div>
+	</div>
+<script type="text/javascript" charset="gb2312">
+
+        var validator = $('#form1').validate({
+           rules:{
+               personnelName: {
+                    required: true,
+                    chName: true
+               },
+               band1: {
+                    required: true
+               },
+               band4: {
+                    required: true
+               },
+               band5: {
+                    required: true
+               },
+
+               band2: {
+                   required: true
+               },
+               band3: {
+                   required: true
+               },
+               band10: {
+                   required: true
+               }
+               
+           },
+        });
+		   
+        $('#submit').bind('tap', function(){
+            validator.resetForm();
+            if (validator.form()){
+                setTimeout(function(){
+                    $('#tips').bind('tap', function(){
+                        $('#tips').addClass('uhide');
+                    });
+                },500);   
+            }else{
+                
+            }
+            
+        });
+
+
+         
+        if($('#gender input').val()=='F'){
+            $('#gender input').attr('checked', 'checked');    
+        }
+        $('#gender').toggle(function(){
+            $(this).find('input').attr('checked',true).val('F');
+        }, function(){
+            $(this).find('input').attr('checked',false).val('M');
+        });
+        
+
+
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+	<title>快速报价v3_01</title>
+	
+	
+	<link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="static/css/ui.css" type="text/css" media="screen" charset="utf-8">
+	
+	<script src="static/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="static/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="static/js/ui.js"></script>
+	
+	<script language="javascript" src="static/js/m/jquery.validate.js" charset="gb2312"></script>
+    
+    <script language="javascript" src="static/js/m/validate.js" charset="gb2312"></script>
+
+	
+</head>
+
+<body id="default">
+	<div id="main-page">
+	<header id="header" style="background-color: #FFFFFF;border-bottom: 1px solid #FFFFFF;">
+		<div id="logo"><img src="static/images//ATT00001.jpg"/></div>
+		<!-- <div class="module-title"></div> -->
+		<div class="quick-price-div-subtitle" style="">
+			<p style="">网络车险</p>
+		</div>
+		<a href="#" class="home"><span></span></a>
+	</header>
+	
+	<div id="title-block" style="background: #005EB0;">
+		<div id="navgation-bar" style="display: none">
+			
+		</div>
+		<img style="width: 100%" src="static/images/quick_price.png"/>
+		
+		<!-- <h2></h2> -->
+	</div>
+	<div class="seperator"></div>
+	
+	<div class="content">
+		
+		<form role="form" id="form1" action="快速报价v3_02.html" style="padding-left: 15px; padding-right: 15px;">
+			<div class="form-group btn-group-wrapper" style="width:100%;padding-bottom: 0">
+				<div class="btn-group-wrapper" style="width: 100%;padding: 10px;">
+			<div class="btn-group text-center" style="width: 100%">
+				<a class="btn btn-danger btn-lg" style="width: 99%;/* padding-left: 10px; */">
+					<p style="margin: 0;">
+						<span><img style="height: 21px" src="static/images/red_tel.png" /></span>
+						<span style="margin: 0;">点击拨打&nbsp;10106969</span>
+					</p>
+				</a>
+			</div>
+			
+		</div>
+			</div>
+			<div class="form-group" style="display:none"></div>
+			<div class="choise-info-form-group form-group " style="padding-top: 0">
+				<p class="text-center" style="color: #29AEDB;width: 98%;margin-top: 0">
+					不方便打电话？那就在线报价
+				</p>
+				
+			</div>
+			<div class="choise-info-form-group form-group">
+                <div class="la">
+                	<label for="band-0">行驶城市：</label>
+                </div>
+                <div style="padding-top: 5px;">
+                	<input onclick="setCity($(this))" type="text" id="band-0" name="band0" class="form-control" placeholder="上海市" style="padding-left: 7px !important;padding-top: 7px !important;">
+                </div>
+                <span class="span-city" style="display: block;width: 22px;left: 81px;top: 17px;"></span>
+            </div>
+            <div class="choise-info-form-group form-group">
+            	<div class="la">
+                	<label for="band-1">车&nbsp;&nbsp;牌&nbsp;号：</label>
+                </div>
+                <div class="form-control form-control-l100">
+                	<input style="padding-left:0px;" type="text" id="band-1" name="band1" class="">
+				</div>
+            </div>
+            <div class="choise-info-form-group form-group">
+            	<div class="la">
+                	<label for="band-2">购车时间：</label>
+                </div>
+                <div class="form-control form-control-l100">
+                	<input style="padding-left:0px;" type="text" name="band2" id="band-2" class="">
+				</div>
+                <script type="text/javascript">
+						$('#band-2').each(function(){
+							hookSmoothDate($(this),new Date(2014,0,4),new Date(2014,4,20));
+						});
+				</script>
+            </div>
+            <div class="choise-info-form-group form-group">
+                <div class="la">
+                	<label for="band-3">车辆价格：</label>
+                </div>
+                <div class="form-control form-control-l135">
+                	<input style="padding-left:0px;" type="text" id="band-3" name="band3" class="">
+                </div>
+                <p style="width:28px;padding: 0;margin-top: 9px;color:#a9a9a9">万元</p>
+            </div>
+            <div class="choise-info-form-group form-group">
+            	<div class="la">
+                	<label for="band-3">手机号码：</label>
+                </div>
+                <div class="form-control form-control-l100">
+                	<input style="padding-left:0px;" type="text" id="band-4" name="band4" class="">
+                </div>
+               
+            		<!-- <ul style="list-style: none;padding: 0;margin: 0;width: 100%">
+            			<li style="width: 100%;display: flex;">
+		                	<label for="band-4" style="padding-top: 7px;">
+		                		手机号码：
+		                	</label>
+		                	<div style="width: 100%; padding-left: 100px; margin-left: -100px;">
+		                		<input style="width:100%" type="text" id="band-4" name="band4" class="form-control form-control-l100">
+		                	</div>
+		                </li>
+		                <li>
+		                	<p class="" style="padding:0 15px 0 15px;color: #999;font-size: 14px;">
+		                		留下您的联系方式，让我们的客服为您提供更加专业的投保建议和车险报价
+		                	</p>
+		                </li>
+            		</ul> -->
+                	
+            </div>
+        </form>
+        <p class="" style="padding:0 15px 0 15px;color: #999;font-size: 14px; padding-left: 20px;">
+			留下您的联系方式，让我们的客服为您提供更加专业的投保建议和车险报价
+		</p>
+        
+		<div class="btn-group-wrapper">
+			<div class="btn-group text-center" style="width: 100%;padding: 10px;padding-top: 0px;">
+				<a onclick="submitForm()" class="btn btn-danger btn-lg" style="width: 98%;padding-left: 10px;">快速报价</a>
+			</div>
+			<div style="height: 34px"></div>
+		</div>
+	</div>
+	
+	<div id="footer">
+		
+		<div id="footer-container">
+			<p>版权所有 @ 安盛天平汽车保险股份有限公司</p>
+			<p>未经许可不得复制、转载或者摘编，违者必究！</p>
+			<p>copyright @ 2004-2011</p>
+		</div>
+	</div>
+	</div>
+	<div id="select-city" style="display: none">
+	
+	<header id="header">
+		<div id="logo"><img src="static/images/logo.png"/></div>
+		<div class="module-title">新保投保</div>
+		<a class="home"><span class="glyphicon glyphicon-home"></span></a>
+	</header>
+	
+	<div id="action-bar">
+        <a href="#" class="btn btn-link btn-left">取消</a>
+        <h2>城市选择</h2>
+        <a href="#" class="btn btn-link btn-right">确定</a>
+    </div>
+    
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#hot-city" data-toggle="tab">热门城市</a></li>
+        <li><a href="#more-city" data-toggle="tab">更多城市</a></li>
+    </ul>
+    
+    <div class="tab-content">
+        <div class="tab-pane active" id="hot-city">
+            <ul class="selector">
+                <li class="active"><a href="#">上海市</a></li>
+                <li><a href="#">北京市</a></li>
+                <li><a href="#">杭州市</a></li>
+                <li><a href="#">宁波市区</a></li>
+                <li><a href="#">广州市</a></li>
+                <li><a href="#">温州市</a></li>
+                <li><a href="#">重庆市</a></li>
+                <li><a href="#">武汉市</a></li>
+                <li><a href="#">石家庄市</a></li>
+                <li><a href="#">南京市</a></li>
+            </ul>
+            
+        </div>
+        
+        <div class="tab-pane slider-content" id="more-city">
+            <ul class="selector al">
+                <li id="a"><a name="a" class="title">A</a>
+                    <ul>
+                        <li><a href="#">安阳市</a></li>
+                    </ul>
+                </li>
+                <li id="b"><a name="b" class="title">B</a>
+                    <ul>
+                        <li><a href="#">保定市</a></li>
+                        <li><a href="#">北京市</a></li>
+                        <li><a href="#">北仑区</a></li>
+                        <li><a href="#">滨州地区</a></li>
+                    </ul>
+                </li>
+                <li id="c"><a name="c" class="title">C</a>
+                    <ul>
+                        <li><a href="#">成都市</a></li>
+                        <li><a href="#">重庆市</a></li>
+                        <li><a href="#">慈溪市</a></li>
+                    </ul>
+                </li>
+                <li id="d"><a name="d" class="title">D</a>
+                    <ul>
+                        <li><a href="#">成都市</a></li>
+                        <li><a href="#">重庆市</a></li>
+                        <li><a href="#">慈溪市</a></li>
+                    </ul>
+                </li>
+                <li id="e"><a name="e" class="title">E</a>
+                    <ul>
+                        <li><a href="#">成都市</a></li>
+                        <li><a href="#">重庆市</a></li>
+                        <li><a href="#">慈溪市</a></li>
+                    </ul>
+                </li>
+                <li id="f"><a name="f" class="title">F</a>
+                    <ul>
+                        <li><a href="#">成都市</a></li>
+                        <li><a href="#">重庆市</a></li>
+                        <li><a href="#">慈溪市</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+        
+        
+    
+	
+	<div id="footer">
+		<div class="btn-group-wrapper">
+			<div class="btn-group">
+				<a class="btn btn-primary btn-xs">网页版</a>
+				<a class="btn btn-default btn-xs">触屏版</a>
+			</div>
+		</div>
+		
+		<div id="footer-container">
+			<p>版权所有 @ 安盛天平汽车保险股份有限公司</p>
+			<p>未经许可不得复制、转载或者摘编，违者必究！</p>
+			<p>copyright @ 2004-2011</p>
+		</div>
+	</div>
+	
+</div>
+
+
+<script type="text/javascript" charset="gb2312">
+
+        var validator = $('#form1').validate({
+           rules:{
+               personnelName: {
+                    required: true,
+                    chName: true
+               },
+               band0: {
+                    required: true
+               },
+               
+               band1: {
+                   required: true
+               },
+
+               band2: {
+                   required: true
+               },
+               
+               band3: {
+                   required: true
+               },
+               
+               band4: {
+                   required: true
+               },
+               
+           },
+        });
+		   
+        $('#submit').bind('tap', function(){
+            validator.resetForm();
+            if (validator.form()){
+                setTimeout(function(){
+                    $('#tips').bind('tap', function(){
+                        $('#tips').addClass('uhide');
+                    });
+                },500);   
+            }else{
+                
+            }
+            
+        });
+
+
+         
+        if($('#gender input').val()=='F'){
+            $('#gender input').attr('checked', 'checked');    
+        }
+        $('#gender').toggle(function(){
+            $(this).find('input').attr('checked',true).val('F');
+        }, function(){
+            $(this).find('input').attr('checked',false).val('M');
+        });
+        
+
+
+</script>
+
+
+</body>
+</html>

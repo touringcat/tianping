@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+	<title>违章查询03_5</title>
+	
+	<link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="static/css/ui.css" type="text/css" media="screen" charset="utf-8">
+	
+	<script src="static/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="static/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="static/js/icheck.js"></script>
+	
+	<script src="static/js/ui.js"></script>
+    <script language="javascript" src="static/js/m/jquery.validate.js" charset="gb2312"></script>
+    
+    <script language="javascript" src="static/js/m/validate.js" charset="gb2312"></script>
+	
+</head>
+
+<body id="default">
+	<script>
+		$(document).ready(function(){
+			$("#myModal").modal();
+		});
+	</script>
+	
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div style="width:100%; height: 100%; z-index: 0; background-color: gray; opacity: 0.5"></div>
+	  <div class="modal-dialog modal-dialog-center"  style="z-index: 1; margin-left: -145px;">
+	    <div class="modal-content" style="width: 280px;">
+	      <div class="modal-body">
+	      	<div class="text-center" style="padding:0 10px 0 10px;width: 100%;">
+	      		<div style="height: 20px"></div>
+	            	
+            	</div>
+            	<div class="text-center">
+		      		<p>您的短信订阅应经修改</p>
+		      		<p>新的短信将于每月23日进行发送</p>
+	      		</div>
+	      		<div style="height: 30px"></div>
+	            	
+            	</div>
+            	<div class="text-center modal-box-button-group">
+		      		<a href="03_03.html" class="btn btn-primary btn-lg">放弃修改</a>
+					<a class="btn btn-danger btn-lg">确认</a>            		
+            	</div>
+	        	<div class="">
+	        		<p style="padding-left: 10px;font-weight: 500;padding-top: 8px;color: #867C7C;">
+	        		</p>
+	        	</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	
+	
+	<header id="header">
+		<div id="logo"><img src="static/images/logo.png"/></div>
+		<div class="module-title">违章查询</div>
+		<a href="#" class="home"><span class="glyphicon glyphicon-chevron-left back-circle-border"></span></a>
+	</header>
+	
+	<div id="title-block" style="padding-top: 10px;">
+		<h2>
+			<div style="display: -webkit-box;">
+				<a href="#" style="text-decoration: none;padding-left: 15px;">
+					<!-- <img style="height: 21px;" src="static/images/back_blue.png"> -->
+					<div  class="leftdirection"></div> 
+					<span class="span-back-sharp span-back-sharp-043">返回</span>
+				</a>
+				<div style="width: 50%; padding-left: 120px; margin-left: -120px;"></div>
+				<div >
+					新增车辆
+				</div>
+			</div>
+		</h2>
+	</div>
+	<div class="seperator"></div>
+	
+	<div class="content">
+		<form role="form" id="form1" action="01_03.html">
+			<div class="base-info-form-group form-group base-info-form-group-pitch form-group-illegal">
+                <div class="la"><label for="band">查询违章城市：</label></div>
+                <div class="form-control form-control-mid" style="width: 100%; padding-left: 160px; margin-left: -160px;">
+                	<input type="text" id="band-0" name="band0" class="">
+                </div>
+        		
+            </div>
+            <div class="base-info-form-group form-group base-info-form-group-pitch form-group-illegal">
+                <div class="la"><label for="band">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;车牌号：</label></div>
+                <div class="form-control form-control-mid" style="width: 100%; padding-left: 160px; margin-left: -160px;">
+                	<input type="text" id="band-1" name="band1" class="">
+                </div>
+            </div>
+            <div class="base-info-form-group form-group base-info-form-group-pitch form-group-illegal">
+                <div class="la"><label for="band">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;车架号：</label></div>
+                <div class="form-control form-control-mid" style="width: 100%; padding-left: 150px; margin-left: -150px;">
+                	<input type="text" id="band-2" name="band2" class="">
+                </div>
+                <div>
+                	<span class="glyphicon glyphicon-question-sign gray-backgroung"></span>
+                </div>
+            </div>
+            
+            <div class="base-info-form-group form-group base-info-form-group-pitch form-group-illegal">
+                <div class="la"><label for="band">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发动机号：</label></div>
+                <div class="form-control form-control-mid" style="width: 100%; padding-left: 150px; margin-left: -150px;">
+                	<input type="text" id="band-3" name="band3" class="">
+                </div>
+                <div>
+                	<span class="glyphicon glyphicon-question-sign gray-backgroung"></span>
+                </div>
+            </div>
+            
+            <div class="base-info-form-group form-group base-info-form-group-pitch form-group-illegal">
+                <div class="la"><label for="band">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;备注(昵称)：</label></div>
+                <div class="form-control form-control-mid" style="width: 100%; padding-left: 160px; margin-left: -160px;">
+                	<input type="text" id="band-4" name="band4" class="">
+                </div>
+            </div>
+			
+            <div class="base-info-form-group form-group base-info-form-group-pitch">
+                <div class="la"><label style="font-weight:normal;width: 150px;" for="band">目前订阅车辆为：</label></div>
+                <div  style="width: 100%; padding-left: 150px; margin-left: -150px; padding-top: 11px;" class="form-control form-control-mid">
+                	<p style="color:#d2322d"><b>沪A12345+上海</b></p>
+                </div>
+            </div>
+            <div class="base-info-form-group form-group ">
+	                <div class="la"><label style="font-weight:normal;" for="">&nbsp;&nbsp;&nbsp;&nbsp;是否继续订阅：</label></div>
+	                
+	                <div id="div-gender" class="">
+							<input id="r_yes" type="radio" name="iCheck" checked>
+							<label for="r_yes">是</label>
+							<input checked id="n_no" type="radio" name="iCheck">
+							<label for="n_no">否</label>
+							<script>
+								$(document).ready(function() {
+									$('#div-gender input').iCheck({
+										checkboxClass : 'icheckbox_square-blue',
+										radioClass : 'iradio_square-blue',
+										increaseArea : '20%' // optional
+									});
+								});
+							</script>
+                	</div>
+	        </div>
+	        <div class="base-info-form-group form-group base-info-form-group-pitch">
+                <div class="la"><label style="font-weight:normal;width: 150px;" for="band">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您新的订阅：</label></div>
+                <div style="width: 100%; padding-left: 150px; margin-left: -150px; padding-top: 11px;" class="form-control form-control-mid">
+                	<p class="gray-tip" style=""><b>沪A12345+北京</b></p>
+                </div>
+            </div>
+            <div class="base-info-form-group form-group base-info-form-group-pitch">
+                <div class="la"><label style="font-weight:normal;width: 150px;" for="band">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机号码：</label></div>
+                <div style="width: 100%; padding-left: 150px; margin-left: -150px; padding-top: 11px;" class="form-control form-control-mid">
+                	<p class="gray-tip" style=""><b>13817777777</b></p>
+                </div>
+            </div>
+            
+        </form>
+		<div class="btn-group-wrapper">
+			<div class="col-xs-12">
+				<a onclick="submitForm()" class="btn btn-danger btn-lg col-xs-12">立即查询</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="seperator"></div>
+	<div id="footer">
+		
+		<div id="footer-container">
+			<p>版权所有 @ 安盛天平汽车保险股份有限公司</p>
+			<p>未经许可不得复制、转载或者摘编，违者必究！</p>
+			<p>copyright @ 2004-2011</p>
+		</div>
+	</div>
+<script type="text/javascript" charset="gb2312">
+
+        var validator = $('#form1').validate({
+           rules:{
+               personnelName: {
+                    required: true,
+                    chName: true
+               },
+               band0: {
+                    required: true
+               },
+
+               band1: {
+                    required: true
+               },
+
+               band2: {
+                   required: true
+               },
+               band3: {
+                   required: true
+               },
+               band4: {
+                   required: true
+               }
+               
+           },
+        });
+		   
+        $('#submit').bind('tap', function(){
+            validator.resetForm();
+            if (validator.form()){
+                setTimeout(function(){
+                    $('#tips').bind('tap', function(){
+                        $('#tips').addClass('uhide');
+                    });
+                },500);   
+            }else{
+                
+            }
+            
+        });
+
+
+         
+        if($('#gender input').val()=='F'){
+            $('#gender input').attr('checked', 'checked');    
+        }
+        $('#gender').toggle(function(){
+            $(this).find('input').attr('checked',true).val('F');
+        }, function(){
+            $(this).find('input').attr('checked',false).val('M');
+        });
+        
+
+
+</script>	
+</body>
+</html>

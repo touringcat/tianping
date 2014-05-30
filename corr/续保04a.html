@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+	<title>04</title>
+	
+	<link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+	
+	
+	<script src="static/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="static/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="static/js/icheck.js"></script>
+	
+	<link rel="stylesheet" href="static/css/ui.css" type="text/css" media="screen" charset="utf-8">
+	<script src="static/js/ui.js"></script>
+    <script language="javascript" src="static/js/m/jquery.validate.js" charset="gb2312"></script>
+    
+    <script language="javascript" src="static/js/m/validate.js" charset="gb2312"></script>
+
+</head>
+
+<body id="default">
+	<div id="main-page">
+	<header id="header">
+		<div id="logo"><img src="static/images/logo.png"/></div>
+		<div class="module-title">续保投保</div>
+		<a href="#" class="home"><span class="glyphicon glyphicon-chevron-left back-circle-border"></span></a>
+	</header>
+	
+	<div class="content">
+		<form role="form" action="05.html">
+				<div class="form-group form-group-head word-inside">
+	                <p>商业险报价页</p>
+	                <div style="" class="fc-l153"></div>
+	                <div id="poll" class="form-control-rft" style="color:#ffffff;white-space: nowrap;">
+		        		<input id="band-0" type="checkbox" class="">
+		        		<label for="band-0" style="width: auto;">投保</label>
+		        		<script>
+							$(document).ready(function(){
+							  $('#poll input').iCheck({
+							    checkboxClass: 'icheckbox_square-blue',
+							    radioClass: 'iradio_square-blue',
+							    increaseArea: '20%' // optional
+							  });
+							});
+						</script>
+					</div>
+	            </div>
+	            <div class="form-group" style="display: none">
+	            </div>
+	            <div class="form-group  word-inside">
+	            	<div style="padding:0 10px 0 10px;width: 100%;">
+		                <table class="table table-bordered table-price">
+							<thead>
+								<tr>
+									<th>险种</th>
+									<th>保额</th>
+									<th>保费</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="width:121px">车辆损失险</td>
+									<td>
+										<div id="a-0" class="form-control-rft" style="white-space: nowrap;">
+							        		<input checked id="band-0" type="checkbox" class="">
+							        		<label style="width: auto" for="band-0">投保</label>
+							        		<script>
+												$(document).ready(function(){
+												  $('#a-0 input').iCheck({
+												    checkboxClass: 'icheckbox_square-blue',
+												    radioClass: 'iradio_square-blue',
+												    increaseArea: '20%' // optional
+												  });
+												});
+											</script>
+										</div>
+									</td>
+									<td style="text-align: right;  width: 82px;">XXXXX</td>
+								</tr>
+								<tr>
+									<td style="">三者责任险</td>
+									<td>
+										<div class="div-poller-select-container center-select">
+											<div class="div-poll-center-select-size"></div>
+											<select id="sel1" class="form-control">
+							                    <option value>100万</option>
+							                    <option value="1">21 - 30</option>
+							                    <option value="2">31 - 40</option>
+							                    <option value="3">...</option>
+							                </select>
+					                	</div>
+									</td>
+									<td style="text-align: right;">XXXXX</td>
+								</tr>
+								<tr>
+									<td>司机座位责任险</td>
+									<td>
+										<div class="div-poller-select-container  center-select">
+											<div class="div-poll-center-select-size"></div>
+											<select id="sel2" class="form-control">
+							                    <option value>50万</option>
+							                    <option value="1">21 - 30</option>
+							                    <option value="2">31 - 40</option>
+							                    <option value="3">...</option>
+						                	</select>
+						                </div>
+									</td>
+									<td style="text-align: right;">XXXXX</td>
+								</tr>
+								<tr>
+									<td>乘客座位责任险</td>
+									<td>
+										<div class="div-poller-select-container center-select">
+											<div class="div-poll-center-select-size"></div>
+											<select id="sel3" class="form-control">
+							                    <option value>50万</option>
+							                    <option value="1">21 - 30</option>
+							                    <option value="2">31 - 40</option>
+							                    <option value="3">...</option>
+						                	</select>
+						                </div>
+					                </td>
+									<td style="text-align: right;">XXXXX</td>
+								</tr>
+								<tr>
+									<td>玻璃单独破碎险</td>
+									<td>
+										<div class="div-poller-select-container  center-select">
+											<div class="div-poll-center-select-size"></div>
+											<select id="sel4" class="form-control">
+							                    <option value>不投保</option>
+							                    <option value="1">国产</option>
+							                    <option value="2">进口</option>
+						                	</select>
+						                </div>
+					                </td>
+									<td style="text-align: right;">XXXXX</td>
+								</tr>
+								<tr>
+									<td>车身划痕损失险</td>
+									<td>
+										<div id="a-1" class="form-control-rft" style="white-space: nowrap;">
+										<div class="div-poller-select-container center-select">
+											<div class="div-poll-center-select-size"></div>
+											<select id="sel5" class="form-control">
+							                    <option value>50万</option>
+							                    <option value="1">21 - 30</option>
+							                    <option value="2">31 - 40</option>
+							                    <option value="3">...</option>
+						                	</select>
+						                </div>
+										</div>
+									</td>
+									<td style="text-align: right;">XXXXX</td>
+								</tr>
+								<tr>
+									<td>整车盗抢险</td>
+									<td>
+										<div id="a-1" class="form-control-rft" style="white-space: nowrap;">
+							        		<input checked id="band-1" type="checkbox" class="">
+							        		<label style="width: auto" for="band-1">投保</label>
+							        		<script>
+												$(document).ready(function(){
+												  $('#a-1 input').iCheck({
+												    checkboxClass: 'icheckbox_square-blue',
+												    radioClass: 'iradio_square-blue',
+												    increaseArea: '20%' // optional
+												  });
+												});
+											</script>
+										</div>
+									</td>
+									<td style="text-align: right;">XXXXX</td>
+								</tr>
+								<tr>
+									<td>自燃责任</td>
+									<td>
+										<div id="a-2" class="form-control-rft" style="white-space: nowrap;">
+							        		<input id="band-2" type="checkbox" class="">
+							        		<label style="width: auto" for="band-2">投保</label>
+							        		<script>
+												$(document).ready(function(){
+												  $('#a-2 input').iCheck({
+												    checkboxClass: 'icheckbox_square-blue',
+												    radioClass: 'iradio_square-blue',
+												    increaseArea: '20%' // optional
+												  });
+												});
+											</script>
+										</div>
+									</td>
+									<td style="text-align: right;">XXXXX</td>
+								</tr>
+								<tr>
+									<td>涉水责任</td>
+									<td>
+										<div id="a-3" class="form-control-rft" style="white-space: nowrap;">
+							        		<input id="band-3" type="checkbox" class="">
+							        		<label style="width: auto" for="band-3">投保</label>
+							        		<script>
+												$(document).ready(function(){
+												  $('#a-3 input').iCheck({
+												    checkboxClass: 'icheckbox_square-blue',
+												    radioClass: 'iradio_square-blue',
+												    increaseArea: '20%' // optional
+												  });
+												});
+											</script>
+										</div>
+									</td>
+									<td style="text-align: right;">XXXXX</td>
+								</tr>
+								<tr>
+									<td colspan="3" style="text-align: right;padding:0;">
+										<div style="display: -webkit-inline-box;width:100%">
+											<div style="padding:8px;border-right: 1px solid #ddd;padding-top: 21px;width:50%">
+												商业险起效日期
+											</div>
+											<div style="padding:8px;width:50%">
+												<div class="form-control form-control-l252 form-control-clear-l0-r0">
+					            					<input type="text" id="band13" name="band13" class="date">
+					            				</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+
+								<tr>
+									<td colspan="3">
+										<div class="text-center actt">
+											<a class="btn btn-danger btn-lg" style="width: 100%">试算该方案</a>
+											<p style="margin-bottom: 5px;margin-top: 7px">优惠价:<span style="color: #d43f3a;font-weight:bold">10000元</span></p>
+											<p style="margin-bottom: 5px;margin-top: 7px">市场价:<del style="color:#C2C2C2">42000元</del></p>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+	            </div>
+	            <div class="form-group" style="display:none"></div>
+	            <div class="form-group form-group-head word-inside">
+	                <p>交强险报价页</p>
+	                <div style="" class="fc-l153"></div>
+	                <div id="traf-poll" class="form-control-rft" style="color:#ffffff;white-space: nowrap;">
+		        		<input id="band-0" type="checkbox" class="">
+		        		<label for="band-0" style="width: auto;">投保</label>
+		        		<script>
+							$(document).ready(function(){
+							  $('#traf-poll input').iCheck({
+							    checkboxClass: 'icheckbox_square-blue',
+							    radioClass: 'iradio_square-blue',
+							    increaseArea: '20%' // optional
+							  });
+							});
+						</script>
+					</div>
+	            </div>
+	            <div class="form-group word-inside" style="display:none;"></div>
+	            <div class="form-group">
+	            	<div style="padding:0 10px 0 10px;width: 100%;">
+		            	<table class="table table-bordered table-traf">
+		            		<tr>
+		            			<td style="width:166px">交强险投保</td>
+		            			<td colspan="2" style="">共计1100.00元</td>
+		            		</tr>
+		            		<tr>
+		            			<td>交强险</td>
+		            			<td colspan="2" style="">5万</td>
+		            		</tr>
+		            		<tr>
+		            			<td>车船险</td>
+		            			<td colspan="2" style="">5万</td>
+		            		</tr>
+		            		<tr>
+		            			<td>
+		            				<div style="padding-top: 3px;">
+										商业险起效日期
+									</div>
+		            			</td>
+		            			<td colspan="2" style="">
+		            				<div class="form-control form-control-l252 form-control-clear-l0-r0">
+		            					<input type="text" id="band12" name="band12" class="date">
+		            				</div>
+		            			</td>
+		            		</tr>
+		            	</table>
+	            	</div>
+	            </div>
+	            <div class="form-group" style="display:none"></div>
+				<div class="form-group form-group-head  word-inside">
+	                <p>配送信息</p>
+	            </div>
+	            <div class="form-group" style="display: none">
+	            </div>
+	            <div class="form-group form-group-mail-l  word-inside">
+	                <div style="padding:0 10px 0 10px;width: 100%;">
+		            	<table class="table table-bordered table-total">
+		            		<tr>
+		            			<td width="50%">商业险</td>
+		            			<td style="">交强险+车船险</td>
+		            		</tr>
+		            		<tr>
+		            			<td>1100</td>
+		            			<td style="">
+		            				<div class="form-control form-control-l252 form-control-clear-l0-r0">
+		            					<input type="text" id="band10" name="band10" class="date">
+		            				</div>
+		            			</td>
+		            		</tr>
+		            		<tr>
+		            			<td>1100</td>
+		            			<td style="">
+		            				<div class="form-control form-control-l252 form-control-clear-l0-r0">
+		            					<input type="text" id="band11" name="band11" class="date">
+		            				</div>
+		            			</td>
+		            		</tr>
+		            		<script type="text/javascript">
+				            	$('.date').each(function(){
+									hookSmoothDate($(this),new Date(2014,0,4),new Date(2014,4,20));
+								});
+							</script>
+		            	</table>
+		            	<div class="" style="width: 100%;">
+		                </div>
+	            	</div>
+	            </div>
+
+
+
+	            <div class="form-group" style="display:none"></div>
+				<div class="form-group form-group-head  word-inside">
+	                <p>配送信息</p>
+	            </div>
+	            <div class="form-group" style="display: none">
+	            </div>
+	            <div class="form-group form-group-mail-l  word-inside">
+	                <div style="padding:0 10px 0 10px;width: 100%;">
+		            	<table class="table table-bordered table-total">
+		            		<tr>
+		            			<td width="50%">商业险</td>
+		            			<td style="">交强险+车船险</td>
+		            		</tr>
+		            		<tr>
+		            			<td>1100</td>
+		            			<td style="">950+720</td>
+		            		</tr>
+		            		<tr>
+		            			<td colspan="2">
+		            				<div class="text-center actt" style="width: 100%">
+		            					<p style="margin-bottom: 5px;margin-top: 7px">总价:<span style="color: #d43f3a;font-weight:bold">3300.00元</span></p>
+		            				</div>
+		            			</td>
+		            		</tr>
+		            	</table>
+		            	<div class="" style="width: 100%;">
+		                </div>
+	            	</div>
+	            </div>
+
+        </form>
+		<div class="btn-group-wrapper">
+			<div class="btn-group">
+				<a href="03_03.html" class="btn btn-primary btn-lg btn-back" style="height:43px">
+					<span class="glyphicon glyphicon-chevron-left back-circle-border"></span>
+				</a>
+				<a onclick="submitForm()" class="btn btn-danger btn-lg">下一步</a>
+			</div>
+		</div>
+		<div class="" style="height:10px"></div>
+    	<div id="div-static-text">
+			<p class="text-center" style="color:#6266CE;margin: 0;">
+				流程走累了,直接拨打服务电话:10106969
+			</p>
+			<p class="text-center" style="color:#6266CE">
+				由客服人员帮你投保
+			</p>
+		</div>
+	</div>
+	<div class="seperator"></div>
+	
+	<div id="footer">
+		<div class="btn-group-wrapper">
+		</div>
+		
+		<div id="footer-container">
+			<p>版权所有 @ 安盛天平汽车保险股份有限公司</p>
+			<p>未经许可不得复制、转载或者摘编，违者必究！</p>
+			<p>copyright @ 2004-2011</p>
+		</div>
+	</div>
+	</div>
+	
+	
+	
+	<div id="select-city" style="display: none">
+	
+	<header id="header">
+		<div id="logo"><img src="static/images/logo.png"/></div>
+		<div class="module-title">新保投保</div>
+		<a class="home"><span class="glyphicon glyphicon-home"></span></a>
+	</header>
+	
+	<div id="action-bar">
+        <a href="#" class="btn btn-link btn-left">取消</a>
+        <h2>城市选择</h2>
+        <a href="#" class="btn btn-link btn-right">确定</a>
+    </div>
+    
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#hot-city" data-toggle="tab">热门城市</a></li>
+        <li><a href="#more-city" data-toggle="tab">更多城市</a></li>
+    </ul>
+    
+    <div class="tab-content">
+        <div class="tab-pane active" id="hot-city">
+            <ul class="selector">
+                <li class="active"><a href="#">上海市</a></li>
+                <li><a href="#">北京市</a></li>
+                <li><a href="#">杭州市</a></li>
+                <li><a href="#">宁波市区</a></li>
+                <li><a href="#">广州市</a></li>
+                <li><a href="#">温州市</a></li>
+                <li><a href="#">重庆市</a></li>
+                <li><a href="#">武汉市</a></li>
+                <li><a href="#">石家庄市</a></li>
+                <li><a href="#">南京市</a></li>
+            </ul>
+            
+        </div>
+        
+        <div class="tab-pane slider-content" id="more-city">
+            <ul class="selector al">
+                <li id="a"><a name="a" class="title">A</a>
+                    <ul>
+                        <li><a href="#">安阳市</a></li>
+                    </ul>
+                </li>
+                <li id="b"><a name="b" class="title">B</a>
+                    <ul>
+                        <li><a href="#">保定市</a></li>
+                        <li><a href="#">北京市</a></li>
+                        <li><a href="#">北仑区</a></li>
+                        <li><a href="#">滨州地区</a></li>
+                    </ul>
+                </li>
+                <li id="c"><a name="c" class="title">C</a>
+                    <ul>
+                        <li><a href="#">成都市</a></li>
+                        <li><a href="#">重庆市</a></li>
+                        <li><a href="#">慈溪市</a></li>
+                    </ul>
+                </li>
+                <li id="d"><a name="d" class="title">D</a>
+                    <ul>
+                        <li><a href="#">成都市</a></li>
+                        <li><a href="#">重庆市</a></li>
+                        <li><a href="#">慈溪市</a></li>
+                    </ul>
+                </li>
+                <li id="e"><a name="e" class="title">E</a>
+                    <ul>
+                        <li><a href="#">成都市</a></li>
+                        <li><a href="#">重庆市</a></li>
+                        <li><a href="#">慈溪市</a></li>
+                    </ul>
+                </li>
+                <li id="f"><a name="f" class="title">F</a>
+                    <ul>
+                        <li><a href="#">成都市</a></li>
+                        <li><a href="#">重庆市</a></li>
+                        <li><a href="#">慈溪市</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+        
+        
+    
+	
+	<div id="footer">
+		<div class="btn-group-wrapper">
+			<div class="btn-group">
+				<a class="btn btn-primary btn-xs">网页版</a>
+				<a class="btn btn-default btn-xs">触屏版</a>
+			</div>
+		</div>
+		
+		<div id="footer-container">
+			<p>版权所有 @ 安盛天平汽车保险股份有限公司</p>
+			<p>未经许可不得复制、转载或者摘编，违者必究！</p>
+			<p>copyright @ 2004-2011</p>
+		</div>
+	</div>
+	
+</div>
+<script type="text/javascript" charset="gb2312">
+
+        var validator = $('#form1').validate({
+           rules:{
+               personnelName: {
+                    required: true,
+                    chName: true
+               },
+               band: {
+                    required: true
+               },
+
+               band2: {
+                   required: true
+               },
+               band3: {
+                   required: true
+               }
+               
+           },
+        });
+		   
+        $('#submit').bind('tap', function(){
+            validator.resetForm();
+            if (validator.form()){
+                setTimeout(function(){
+                    $('#tips').bind('tap', function(){
+                        $('#tips').addClass('uhide');
+                    });
+                },500);   
+            }else{
+                
+            }
+            
+        });
+
+
+         
+        if($('#gender input').val()=='F'){
+            $('#gender input').attr('checked', 'checked');    
+        }
+        $('#gender').toggle(function(){
+            $(this).find('input').attr('checked',true).val('F');
+        }, function(){
+            $(this).find('input').attr('checked',false).val('M');
+        });
+        
+
+
+</script>	
+	
+	
+	
+</body>
+</html>

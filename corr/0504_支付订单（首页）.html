@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+	<title>支付订单（首页）</title>
+	
+
+	<link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="static/css/ui.css" type="text/css" media="screen" charset="utf-8">
+	
+	<script src="static/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="static/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="static/js/ui.js"></script>
+</head>
+
+<body id="default">
+	<header id="header">
+		<div id="logo"><img src="static/images/logo.png"/></div>
+		<div class="module-title">支付订单</div>
+		<a href="#" class="home">
+			<span class="glyphicon glyphicon-chevron-left back-circle-border">
+				<!-- <img src="static/images/icon_new.png"/> -->
+			</span>
+		</a>
+	</header>
+	
+	<div id="title-block">
+		
+		
+		<h2>
+			<div style="font-size:14px">
+				<p>offer赠送话术</p>
+				<p class="">变量:【总保费】<span style="color:red">【优惠金额】</span></p>
+			</div>
+		</h2>
+		
+	</div>
+	
+	
+	<div class="content">
+		<form role="form" id="form1" action="03_03.html">
+			<div>
+				<div class="tab-switch">
+					<ul>
+						<li name="credit-card" onclick="payManeraTabSwitch($(this))" class="active"><a>信用卡快捷支付</a></li>
+						<li name="bank-card" onclick="payManeraTabSwitch($(this))"><a>储蓄卡快捷支付</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="form-group form-group-2line">
+                <div class="la zfsy">
+                	<p>您共要支付￥589.00元</p>
+                	<a class="btn btn-primary">订单详情</a>
+                	<!-- <div class="form-control-l135 form-control-l135-a-float-r">
+                		
+                	</div> -->
+                </div>
+                <div style="padding-left: 15px;padding-top: 0px" class="form-group-2line">
+                	<p>请选择支付方式</p>
+                </div>
+            </div>   
+             <div class="tab-content">
+		        <div class="tab-pane active" id="bank-list-tab-1">
+		            <ul class="selector tab-card credit-card">
+		                <li class="active"><a href="#">工商银行</a></li>
+		                <li style="background-color: rgb(248, 245, 245);"><a href="#">建设银行</a></li>
+		                <li><a href="#">农业银行</a></li>
+		                <li style="background-color: rgb(248, 245, 245);"><a href="#">交通银行</a></li>
+		                <li><a href="#">浦发银行</a></li>
+		            </ul>
+		            <ul class="selector tab-card bank-card" id="bank-list-tab-1">
+		                <li class="active"><a href="#">工商银行－储蓄卡快捷支付</a></li>
+		                <li style="background-color: rgb(248, 245, 245);"><a href="#">建设银行－储蓄卡快捷支付</a></li>
+		                <li><a href="#">农业银行－储蓄卡快捷支付</a></li>
+		                <li style="background-color: rgb(248, 245, 245);"><a href="#">交通银行－储蓄卡快捷支付</a></li>
+		                <li><a href="#">浦发银行－储蓄卡快捷支付</a></li>
+		            </ul>
+		            <script>
+		            	$(".selector li").click(function(){
+		            		$(".selector .active").removeClass("active");
+		            		$(this).addClass("active");
+		            	});
+		            </script>
+		            <style>
+		            	.selector a{
+		            		text-decoration: none;
+		            	}
+		            </style>
+	            </div>
+            </div>        
+			<!-- <div class="form-group tab-card credit-card">
+                <div class="la"><label for="band0">工商银行</label></div>
+            </div>
+			<div class="form-group tab-card credit-card">
+                <div class="la"><label for="band0">建设银行</label></div>
+            </div>
+			<div class="form-group tab-card credit-card">
+                <div class="la"><label for="band0">农业银行</label></div>
+            </div>
+			<div class="form-group tab-card credit-card">
+                <div class="la"><label for="band0">交通银行</label></div>
+            </div>
+			<div class="form-group tab-card credit-card">
+                <div class="la"><label for="band0">浦发银行</label></div>
+            </div>
+            <div class="form-group tab-card bank-card">
+                <div class="la"><label for="band0">工商银行－储蓄卡快捷支付</label></div>
+            </div>
+			<div class="form-group tab-card bank-card">
+                <div class="la"><label for="band0">建设银行－储蓄卡快捷支付</label></div>
+            </div>
+			<div class="form-group tab-card bank-card">
+                <div class="la"><label for="band0">农业银行－储蓄卡快捷支付</label></div>
+            </div>
+			<div class="form-group tab-card bank-card">
+                <div class="la"><label for="band0">交通银行－储蓄卡快捷支付</label></div>
+            </div>
+			<div class="form-group tab-card bank-card">
+                <div class="la"><label for="band0">浦发银行－储蓄卡快捷支付</label></div>
+            </div> -->
+        </form>
+		<!-- <div class="btn-group-wrapper">
+			<div class="btn-group">
+				<a href="03_02.html" class="btn btn-primary btn-lg btn-back" style="height:41px">
+					<span class="glyphicon glyphicon-chevron-left back-circle-border"></span>
+				</a>
+				<a onclick="submitForm()" class="btn btn-danger btn-lg">下一步,查看车险报价</a>
+			</div>
+			<div style="height: 34px"></div>
+		</div> -->
+	</div>
+	
+	<div id="footer">
+		<div class="btn-group-wrapper">
+		</div>
+		
+		<div id="footer-container">
+			<p>版权所有 @ 安盛天平汽车保险股份有限公司</p>
+			<p>未经许可不得复制、转载或者摘编，违者必究！</p>
+			<p>copyright @ 2004-2011</p>
+		</div>
+	</div>
+	
+<script type="text/javascript" charset="gb2312">
+
+       
+		   
+        $('#submit').bind('tap', function(){
+            validator.resetForm();
+            if (validator.form()){
+                setTimeout(function(){
+                    $('#tips').bind('tap', function(){
+                        $('#tips').addClass('uhide');
+                    });
+                },500);   
+            }else{
+                
+            }
+            
+        });
+
+
+         
+       
+        
+
+
+</script>    
+</body>
+</html>

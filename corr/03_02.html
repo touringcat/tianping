@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+	<title>03_02</title>
+	
+
+	<link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="static/css/ui.css" type="text/css" media="screen" charset="utf-8">
+	
+	<script src="static/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="static/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	
+	<script src="static/js/ui.js"></script>
+    <script language="javascript" src="static/js/m/jquery.validate.js" charset="gb2312"></script>
+    
+    <script language="javascript" src="static/js/m/validate.js" charset="gb2312"></script>
+
+</head>
+
+<body id="default">
+	<header id="header">
+		<div id="logo"><img src="static/images/logo.png"/></div>
+		<div class="module-title">新保投保</div>
+		<a href="#" class="home">
+			<span class="glyphicon glyphicon-chevron-left back-circle-border">
+				<!-- <img src="static/images/icon_new.png"/> -->
+			</span>
+		</a>
+	</header>
+	
+	<div id="title-block">
+		<div id="navgation-bar">
+			
+			<ul class="finished-2 finished">
+				<li class="finished"><span></span></li>
+				<li class="finished"><span></span></li>
+				<li class="finished"><span></span></li>
+				<li class="current"><span></span></li>
+				<li class="shadowstart">
+					<div class="des">
+						<p class="glyphicon glyphicon-tag"></p>
+					</div>
+					<span></span>
+				</li>
+				<li class=""><span></span></li>
+				<li class=""><span></span></li>
+				<li class="shadowstart">
+					<div class="des">
+						<p class="glyphicon glyphicon-usd"></p>
+					</div>
+					<span></span>
+				</li>
+				<li class="shadowstart">
+					<div class="des">
+						<p class="glyphicon glyphicon-ok"></p>
+					</div>
+					<span></span>
+				</li>
+			</ul>
+			
+		</div>
+		
+		<h2>配置选择</h2>
+	</div>
+	<div class="seperator"></div>
+	
+	<div class="content">
+		<form role="form" id="form1" action="03_03.html">
+			<div class="choise-info-form-group form-group peizhio">
+                <div class="la"><label for="band0">品牌型号：</label></div>
+                <div class="form-control form-control-l100">
+                	<input type="text" id="band0" name="band0">
+                	<ul data-role="none" class="pannel" id="pannel2">
+						<li>
+							safasdfasdfasdf					
+						</li>
+					</ul>
+					
+                    <div class="panneli">
+                    	<img style="" src="static\images\che.png" class=""/>
+                    </div>
+				</div>
+            </div>
+            <div class="choise-info-form-group form-group peizhi" style="height:auto;-webkit-box-align: center;">
+                <div class="la"><label for="cfg-type">配置型号：</label></div>
+                <div class="form-control form-control-l100">
+                	<p>
+						撒旦法gas短发散发萨芬阿斯蒂芬阿斯蒂芬阿斯蒂芬不阿萨德发送到发生的发生的分阿斯蒂芬阿斯蒂芬阿萨德分阿萨德发送地方阿斯蒂芬阿萨德发速度发送地方阿斯蒂芬阿萨德发送对发射点发阿萨德发送到发射点发
+                	</p>
+				    <ul data-role="none" class="pannel">
+					</ul>
+				</div>
+            </div>
+            <div class="choise-info-form-group form-group peizhio">
+                <div class="la"><label for="band2">车&nbsp;&nbsp;架&nbsp;&nbsp;号：</label></div>
+                <div class="form-control form-control-l100">
+                	<input type="text" id="band2" name="band2" class="c-wh">
+				    <ul data-role="none" class="pannel" id="pannel0">
+						<li>
+							<img style="" src="static\images\che.png" class=""/>
+						</li>
+					</ul>
+                    
+                </div>
+            </div>
+            <div class="choise-info-form-group form-group peizhio">
+                <div class="la"><label for="band3">发动机号：</label></div>
+                <div class="form-control form-control-l100">
+                	<input type="text" id="band3" name="band3" class="c-wh">
+                	<ul data-role="none" class="pannel" id="pannel1">
+						<li>
+							<img style="" src="static\images\che.png" class=""/>
+						</li>
+					</ul>
+					<script>
+						$("#pannel0").hide();
+						$("#pannel1").hide();
+						$("#pannel2").hide();
+					$(document).ready(function(){
+						$("ul.pannel").css("width","-=115px");
+						$("#band2").focus(function(){
+							$("#pannel0").show();
+							scroll2Top($(this));
+						});
+						$("#band2").blur(function(){
+							$("#pannel0").hide();
+						});
+						$("#band3").focus(function(){
+							$("#pannel1").show();
+							scroll2Top($(this));
+						});
+						$("#band3").blur(function(){
+							$("#pannel1").hide();
+						});
+						
+						$("#band0").focus(function(){
+							$("#pannel2").show();
+							scroll2Top($(this));
+						});
+						$("#band0").blur(function(){
+							$("#pannel2").hide();
+						});
+						$("input[type='text']").keydown(function(){
+							$(".pannel").hide();
+						});
+					});
+						
+					</script>
+
+                
+                </div>
+            </div>
+            <div class="choise-info-form-group form-group peizhio">
+                <div class="la"><label for="band4">注册日期：</label></div>
+                <div class="form-control form-control-l100"><input type="text" id="band4" name="band4" class=""></div>
+                <script type="text/javascript">
+					$('#band4').each(function(){
+						hookSmoothDate($(this),new Date(2014,0,4),new Date(2014,4,20));
+					});
+				</script>
+            </div>
+            <div class="form-group">
+                <div class="">
+                	<div class="no-padding div-base-info">
+                		
+                	</div>
+                </div>
+            </div>
+        </form>
+        <div class="seperator"></div>
+		<div class="btn-group-wrapper">
+			<!-- <div class="btn-group" style="width: 100%;">
+				<a href="01_03.html" class="btn btn-primary btn-lg btn-back style-first-button-style">
+					<span class="glyphicon glyphicon-chevron-left back-circle-border"></span>
+				</a>
+				<a onclick="submitForm()" class="btn btn-danger btn-lg style-second-button-width">下一步,车型配置选择</a>
+			</div> -->
+			<div class="btn-group" style="width: 100%;">
+				<div class="col-xs-3">
+					<a href="01_03.html" class="btn btn-primary btn-lg btn-back style-first-button-style">
+						<span class="glyphicon glyphicon-chevron-left back-circle-border"></span>
+					</a>
+				</div>
+				<div class="col-xs-9">
+					<a onclick="submitForm()" class="btn btn-danger btn-lg style-second-button-width">下一步,车型配置选择</a>
+				</div>
+			</div>
+			<div style="height: 34px"></div>
+		</div>
+	</div>
+	
+	<div class="seperator"></div>
+	<div id="footer">
+		<div class="btn-group-wrapper">
+		</div>
+		
+		<div id="footer-container">
+			<p>版权所有 @ 安盛天平汽车保险股份有限公司</p>
+			<p>未经许可不得复制、转载或者摘编，违者必究！</p>
+			<p>copyright @ 2004-2011</p>
+		</div>
+	</div>
+	
+<script type="text/javascript" charset="gb2312">
+
+        var validator = $('#form1').validate({
+           rules:{
+               personnelName: {
+                    required: true,
+                    chName: true
+               },
+               band0: {
+                    required: true
+               },
+
+               band2: {
+                   required: true
+               },
+			   
+               band4: {
+                   required: true
+               },
+
+               band3: {
+                   required: true
+               },
+               cfgtype: {
+               		required: true
+               }
+               
+           },
+        });
+		   
+        $('#submit').bind('tap', function(){
+            validator.resetForm();
+            if (validator.form()){
+                setTimeout(function(){
+                    $('#tips').bind('tap', function(){
+                        $('#tips').addClass('uhide');
+                    });
+                },500);   
+            }else{
+                
+            }
+            
+        });
+
+
+         
+        if($('#gender input').val()=='F'){
+            $('#gender input').attr('checked', 'checked');    
+        }
+        $('#gender').toggle(function(){
+            $(this).find('input').attr('checked',true).val('F');
+        }, function(){
+            $(this).find('input').attr('checked',false).val('M');
+        });
+        
+       $('.c-wh').keydown(function(){
+            var _this=$(this);
+            if($(this).siblings('.pannel')){$(this).siblings('.pannel').show()}
+            $(this).siblings('.pannel').find('li').click(function(){
+                _this.val( $(this).html());
+                $(this).parent().hide();
+            })
+        });
+ 
+
+</script>    
+</body>
+</html>

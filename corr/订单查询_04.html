@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+	<title>订单查询_04</title>
+	
+	<link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="static/css/ui.css" type="text/css" media="screen" charset="utf-8">
+	
+	<script src="static/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="static/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="static/js/icheck.js"></script>
+	
+</head>
+
+<body id="default">
+	<header id="header">
+		<div id="logo"><img src="static/images/logo.png"/></div>
+		<div class="module-title">订单查询</div>
+		<a href="#" class="home"><span class="glyphicon glyphicon-chevron-left back-circle-border"></span></a>
+	</header>
+	
+	<div id="title-block">		
+		<h2>确认信息</h2>
+	</div>
+	<div class="seperator"></div>
+	
+	<div class="content">
+		<form role="form">
+            <div class="form-group">
+                <div class="col-xs-12">
+                	<p class="text-center">OFFER信息</p>
+                	<p class="text-center">商业险价格,优惠幅度,赠送方式</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-12">
+                	<div class="col-xs-2 no-padding div-base-info">
+						<input id="band-0" type="radio" name="iCheck" checked> 
+						<label for="band-0" >上门收费</label>
+						
+                	</div>
+                	<div class="col-xs-10">
+                		<p class="p-success"></p>
+                	</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-12">
+                	<div class="col-xs-2 no-padding div-base-info">
+						<input id="band-1" type="radio" name="iCheck">
+						<label for="band-1" >信用卡快捷支付</label>
+                	</div>
+                	<div class="col-xs-10">
+                		<p class="p-success"> </p>
+                	</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-12">
+                	<div class="col-xs-2 no-padding div-base-info">
+                		<input id="band-2" type="radio" name="iCheck">
+						<label for="band-2">储蓄卡支付</label>
+                	</div>
+                	<div class="col-xs-10">
+                		<p class="p-success"> </p>
+                	</div>
+                </div>
+            </div>
+            
+        </form>
+        <!-- <div class="seperator"></div> -->
+        <div class="col-xs-12">
+			<!-- btn btn-danger btn-lg -->
+			<a class="btn btn-danger btn-lg col-xs-12">支&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;付</a>
+			<div style="height: 34px"></div>
+		</div>
+		<!-- <div id="new-car-flag" class="form-control-rft" style="white-space: nowrap;">
+    		<a class="btn btn-danger col-xs-12"></a>
+		</div> -->
+	</div>
+	
+	<div style="height: 142px;"></div>
+	
+	<script>
+	$(document).ready(function(){
+	  $('input').iCheck({
+	    checkboxClass: 'icheckbox_square-blue',
+	    radioClass: 'iradio_square-blue',
+	    increaseArea: '20%' // optional
+	  });
+	});
+	</script>
+	
+	<div class="seperator"></div>
+	<div id="footer">
+		<div class="btn-group-wrapper">
+		</div>
+		
+		<div id="footer-container">
+			<p>版权所有 @ 安盛天平汽车保险股份有限公司</p>
+			<p>未经许可不得复制、转载或者摘编，违者必究！</p>
+			<p>copyright @ 2004-2011</p>
+		</div>
+	</div>
+	
+</body>
+</html>
